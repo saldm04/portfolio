@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Salvatore Di Martino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body class="bg-slate-50 text-slate-900 transition-colors duration-500 ease-out">
+    <header>
+      <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top py-3 transition-all duration-500">
+        <div class="container">
+          <a class="navbar-brand fw-semibold tracking-wide text-success" href="#home">SDM</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav gap-2">
+              <li class="nav-item"><a class="nav-link nav-animated" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link nav-animated" href="#about">About Me</a></li>
+              <li class="nav-item"><a class="nav-link nav-animated" href="#journey">Percorso</a></li>
+              <li class="nav-item"><a class="nav-link nav-animated" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link nav-animated" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link nav-animated" href="#hobbies">Hobbies</a></li>
+              <li class="nav-item"><a class="nav-link nav-animated" href="#contact">Contact</a></li>
+            </ul>
+            <button id="themeToggle" class="btn btn-outline-success ms-lg-4 mt-3 mt-lg-0 d-flex align-items-center gap-2">
+              <span class="icon-light">🌞</span>
+              <span class="icon-dark d-none">🌙</span>
+              <span class="small">Tema</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="min-h-screen flex items-center pt-24 pb-16">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6 fade-in-up">
+              <p class="text-sm uppercase tracking-[0.3em] text-emerald-500 mb-3">Benvenuto nel mio mondo digitale</p>
+              <h1 class="display-4 fw-bold mb-3 text-slate-900 dark:text-white">Salvatore Di Martino</h1>
+              <h2 class="h4 text-emerald-600 mb-4"><span id="typing"></span><span class="typing-cursor">|</span></h2>
+              <p class="lead text-slate-600 dark:text-slate-300 max-w-xl">Studente magistrale in Informatica all'Università di Salerno, specializzato in Software Engineering &amp; IT Management con una forte passione per dati, architetture scalabili e servizi digitali sostenibili.</p>
+              <div class="d-flex flex-wrap gap-3 mt-4">
+                <a class="btn btn-success shadow-sm" href="#projects">Esplora i progetti</a>
+                <a class="btn btn-outline-success" href="#contact">Contattami</a>
+              </div>
+              <div class="d-flex gap-4 mt-5">
+                <a class="social-link" href="https://github.com/saldm04" target="_blank" rel="noopener" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577 0-.285-.01-1.04-.016-2.04-3.338.727-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.833 2.807 1.303 3.492.997.108-.776.418-1.303.76-1.603-2.665-.303-5.467-1.333-5.467-5.93 0-1.31.468-2.383 1.236-3.223-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.873.12 3.176.77.84 1.235 1.913 1.235 3.223 0 4.61-2.807 5.624-5.48 5.92.43.37.81 1.096.81 2.21 0 1.596-.015 2.884-.015 3.277 0 .32.19.694.8.576C20.565 21.795 24 17.295 24 12 24 5.37 18.63 0 12 0z" />
+                  </svg>
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/saldm" target="_blank" rel="noopener" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+                    <path d="M4.98 3.5C4.98 5 3.9 6.1 2.5 6.1S0 5 0 3.5C0 2 1.1.9 2.5.9s2.48 1.1 2.48 2.6zM.2 8.3h4.6v15.4H.2V8.3zm7.4 0h4.4v2.1h.1c.6-1.1 2.1-2.3 4.3-2.3 4.6 0 5.4 3 5.4 6.8v7.8h-4.6v-6.9c0-1.7 0-3.8-2.3-3.8-2.3 0-2.6 1.8-2.6 3.7v7h-4.6V8.3z" />
+                  </svg>
+                </a>
+                <a class="social-link" href="mailto:tatodimartino@gmail.com" aria-label="Email">
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+                    <path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.01L12 13l10-6.99V6H2zm20 12V9l-10 7L2 9v9h20z" />
+                  </svg>
+                </a>
+              </div>
+              <div class="hero-meta mt-4 d-flex flex-wrap gap-2">
+                <span class="meta-chip">🎓 Studente magistrale (LM-18)</span>
+                <span class="meta-chip">📍 Maiori (SA), Campania</span>
+                <span class="meta-chip">🎂 Nato il 2 Marzo 2004</span>
+                <span class="meta-chip">🚗 Patente B</span>
+              </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1 fade-in-up delay-200">
+              <div class="relative rounded-3xl overflow-hidden shadow-xl">
+                <img src="assets/profile.svg" class="w-100" alt="Profilo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-5 bg-white dark:bg-slate-900 transition-colors duration-500">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6 fade-in-left">
+              <img src="assets/profile.svg" alt="Ritratto" class="rounded-circle shadow-lg w-75 mx-auto d-block" />
+            </div>
+            <div class="col-lg-6 fade-in-right">
+              <span class="badge bg-emerald-100 text-emerald-700 rounded-pill mb-3 px-3 py-2">About Me</span>
+              <h2 class="h1 fw-semibold mb-4 text-slate-900 dark:text-white">Tecnologia, persone e territorio come punti cardinali</h2>
+              <p class="mb-3 text-slate-600 dark:text-slate-300">Sono Salvatore Di Martino, studente magistrale in Informatica (curriculum Software Engineering and IT Management) presso l'Università degli Studi di Salerno. Dopo la laurea triennale con lode, continuo a coltivare un approccio rigoroso alla programmazione, alla modellazione dei dati e alla progettazione di servizi digitali.</p>
+              <p class="mb-3 text-slate-600 dark:text-slate-300">Le esperienze di tirocinio in collaborazione con aziende mi hanno insegnato a operare in team interdisciplinari, trasformando requisiti complessi in soluzioni affidabili e mantenibili. Quando non sono davanti al codice, organizzo escursioni sulla Costiera Amalfitana, suono la chitarra e valorizzo il territorio attraverso iniziative sociali.</p>
+              <div class="row g-3 mt-4">
+                <div class="col-sm-6">
+                  <div class="info-tile">
+                    <span class="label">Email</span>
+                    <a class="value" href="mailto:tatodimartino@gmail.com">tatodimartino@gmail.com</a>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="info-tile">
+                    <span class="label">Telefono</span>
+                    <a class="value" href="tel:+393714355173">+39 371 43 55 173</a>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="info-tile">
+                    <span class="label">Indirizzo</span>
+                    <span class="value">Via De Ponte, 7 – 84010 Maiori (SA)</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="info-tile">
+                    <span class="label">Patente</span>
+                    <span class="value">B</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="journey" class="py-5 bg-slate-50 dark:bg-slate-950 transition-colors duration-500">
+        <div class="container">
+          <div class="text-center mb-5 fade-in-up">
+            <span class="badge bg-emerald-100 text-emerald-700 rounded-pill px-3 py-2">Percorso</span>
+            <h2 class="display-6 mt-3 text-slate-900 dark:text-white">Formazione e iniziative che mi hanno plasmato</h2>
+            <p class="text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">Un viaggio accademico e progettuale che intreccia software engineering, gestione dell'innovazione e valorizzazione del territorio campano.</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-6 fade-in-left">
+              <div class="journey-card h-100">
+                <h3 class="h4 mb-4">Istruzione</h3>
+                <ul class="timeline list-unstyled m-0">
+                  <li class="timeline-item">
+                    <span class="timeline-period">Set 2025 &ndash; in corso</span>
+                    <h4 class="timeline-title">Laurea Magistrale in Informatica (LM-18)</h4>
+                    <p class="timeline-subtitle">Università degli Studi di Salerno &middot; Curriculum Software Engineering and IT Management</p>
+                  </li>
+                  <li class="timeline-item">
+                    <span class="timeline-period">Set 2022 &ndash; Set 2025</span>
+                    <h4 class="timeline-title">Laurea Triennale in Informatica</h4>
+                    <p class="timeline-subtitle">Università degli Studi di Salerno &middot; Voto 110/110 e lode</p>
+                  </li>
+                  <li class="timeline-item">
+                    <span class="timeline-period">Diploma 2022</span>
+                    <h4 class="timeline-title">Perito in Informatica e Telecomunicazioni</h4>
+                    <p class="timeline-subtitle">ISIS P. Comite &middot; Voto finale 100/100 e lode</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 fade-in-right">
+              <div class="journey-card h-100">
+                <h3 class="h4 mb-4">Esperienze progettuali</h3>
+                <ul class="timeline list-unstyled m-0">
+                  <li class="timeline-item">
+                    <span class="timeline-period">Apr 2025 &ndash; Set 2025</span>
+                    <h4 class="timeline-title">RECMOP &ndash; Renewable Energy Communities</h4>
+                    <p class="timeline-subtitle">Sistema software per l'automazione della raccolta e preparazione di dati eterogenei a supporto del monitoraggio e dell'ottimizzazione delle comunità energetiche rinnovabili.</p>
+                    <div class="timeline-links">
+                      <a class="link-success" href="https://github.com/saldm04/RECMOP" target="_blank" rel="noopener">GitHub</a>
+                      <a class="link-success" href="https://labgis.di.unisa.it/?page_id=1983" target="_blank" rel="noopener">Scheda progetto</a>
+                    </div>
+                  </li>
+                  <li class="timeline-item">
+                    <span class="timeline-period">Set 2024 &ndash; Gen 2025</span>
+                    <h4 class="timeline-title">IS-HotelCampus</h4>
+                    <p class="timeline-subtitle">Piattaforma gestionale per camere, servizi e prenotazioni alberghiere sviluppata in team universitario con stack Java, Spring, Java EE, HTML5/CSS/JS e SQL.</p>
+                    <div class="timeline-links">
+                      <a class="link-success" href="https://github.com/saldm04/IS-HotelCampus" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                  </li>
+                  <li class="timeline-item">
+                    <span class="timeline-period">Dic 2024 &ndash; Gen 2025</span>
+                    <h4 class="timeline-title">Connect4IA</h4>
+                    <p class="timeline-subtitle">Applicazione desktop per giocare a Forza 4 contro un'IA con livelli di difficoltà progressivi e motore decisionale in Python.</p>
+                    <div class="timeline-links">
+                      <a class="link-success" href="https://github.com/saldm04/Connect4IA" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                  </li>
+                  <li class="timeline-item">
+                    <span class="timeline-period">Dal 2023</span>
+                    <h4 class="timeline-title">Hiking The Amalfi Coast</h4>
+                    <p class="timeline-subtitle">Co-fondatore dell'associazione e autore del sito web ufficiale per promuovere escursioni e iniziative culturali sulla Costiera Amalfitana.</p>
+                    <div class="timeline-links">
+                      <a class="link-success" href="https://www.hikingtheamalficoast.org" target="_blank" rel="noopener">Sito</a>
+                      <a class="link-success" href="https://github.com/saldm04/hiking-the-amalfi-coast.org" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 mt-1">
+            <div class="col-lg-6 fade-in-left">
+              <div class="journey-card h-100">
+                <h3 class="h4 mb-3">Competenze trasversali</h3>
+                <ul class="list-unstyled mb-0 text-slate-600 dark:text-slate-300">
+                  <li class="soft-skill">Collaborazione e comunicazione maturate in contesti turistici multiculturali.</li>
+                  <li class="soft-skill">Coordinamento logistico di eventi, viaggi e attività associative.</li>
+                  <li class="soft-skill">Leadership organizzativa come socio fondatore di Hiking The Amalfi Coast.</li>
+                  <li class="soft-skill">Capacità di problem solving maturate in progetti interdisciplinari di tirocinio.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 fade-in-right">
+              <div class="journey-card h-100">
+                <h3 class="h4 mb-3">Competenze linguistiche</h3>
+                <div class="language-grid">
+                  <div class="language-card">
+                    <span class="language-name">Italiano</span>
+                    <span class="language-level">Madrelingua</span>
+                  </div>
+                  <div class="language-card">
+                    <span class="language-name">Inglese &ndash; Cambridge B1 PET</span>
+                    <span class="language-level">Listening 3/5 · Reading 4/5 · Speaking 3/5 · Writing 4/5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-5 bg-slate-50 dark:bg-slate-950 transition-colors duration-500">
+        <div class="container">
+          <div class="text-center mb-5 fade-in-up">
+            <span class="badge bg-emerald-100 text-emerald-700 rounded-pill px-3 py-2">Progetti</span>
+            <h2 class="display-6 mt-3 text-slate-900 dark:text-white">Esperienze significative</h2>
+            <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Una selezione di progetti accademici e di ricerca che raccontano il mio approccio a dati, algoritmi e design centrato sull'utente.</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4 fade-in-up">
+              <div class="project-card h-100">
+                <div class="project-image">
+                  <img src="assets/project-data.svg" alt="Sistema dati per comunità energetiche" />
+                </div>
+                <div class="project-content">
+                  <h3 class="h5">RECMOP &ndash; Renewable Energy Communities</h3>
+                  <p>Piattaforma software che automatizza raccolta, normalizzazione e analisi di dataset eterogenei per supportare il monitoraggio e la pianificazione delle Comunità Energetiche Rinnovabili.</p>
+                  <div class="d-flex gap-3">
+                    <a class="link-success" href="https://github.com/saldm04/RECMOP" target="_blank" rel="noopener">GitHub</a>
+                    <a class="link-success" href="https://labgis.di.unisa.it/?page_id=1983" target="_blank" rel="noopener">Scheda progetto</a>
+                  </div>
+                  <div class="project-tags mt-3">
+                    <span class="tag">Data Engineering</span>
+                    <span class="tag">Automazione</span>
+                    <span class="tag">Sostenibilità</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-in-up delay-100">
+              <div class="project-card h-100">
+                <div class="project-image">
+                  <img src="assets/project-automation.svg" alt="Gestione alberghiera" />
+                </div>
+                <div class="project-content">
+                  <h3 class="h5">IS-HotelCampus</h3>
+                  <p>Sistema di gestione digitale per camere, servizi e prenotazioni alberghiere, sviluppato in team integrando architetture Java, Spring, Java EE e front-end web responsive.</p>
+                  <div class="d-flex gap-3">
+                    <a class="link-success" href="https://github.com/saldm04/IS-HotelCampus" target="_blank" rel="noopener">GitHub</a>
+                  </div>
+                  <div class="project-tags mt-3">
+                    <span class="tag">Java</span>
+                    <span class="tag">Spring</span>
+                    <span class="tag">SQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-in-up delay-200">
+              <div class="project-card h-100">
+                <div class="project-image">
+                  <img src="assets/project-ux.svg" alt="Gioco Forza 4 con intelligenza artificiale" />
+                </div>
+                <div class="project-content">
+                  <h3 class="h5">Connect4IA</h3>
+                  <p>Applicazione desktop che permette di sfidare un'intelligenza artificiale a Forza 4 con livelli di difficoltà progressivi e motore di decisione basato su algoritmi di ricerca.</p>
+                  <div class="d-flex gap-3">
+                    <a class="link-success" href="https://github.com/saldm04/Connect4IA" target="_blank" rel="noopener">GitHub</a>
+                  </div>
+                  <div class="project-tags mt-3">
+                    <span class="tag">Python</span>
+                    <span class="tag">AI</span>
+                    <span class="tag">Ricerca algoritmica</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="py-5 bg-white dark:bg-slate-900 transition-colors duration-500">
+        <div class="container">
+          <div class="text-center mb-5 fade-in-up">
+            <span class="badge bg-emerald-100 text-emerald-700 rounded-pill px-3 py-2">Skills</span>
+            <h2 class="display-6 mt-3 text-slate-900 dark:text-white">Competenze tecniche in evidenza</h2>
+            <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Una base solida su programmazione, algoritmi, architetture e basi di dati, integrata da strumenti di testing e gestione di progetti complessi.</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-xl-4 fade-in-up">
+              <div class="skill-card">
+                <h3 class="h6">Java &amp; Framework enterprise</h3>
+                <p class="mb-2">Spring, Java EE, progettazione di servizi REST e orchestrazione di componenti enterprise.</p>
+                <span class="skill-level">Livello: Ottimo</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4 fade-in-up delay-100">
+              <div class="skill-card">
+                <h3 class="h6">HTML5, CSS3 &amp; Bootstrap</h3>
+                <p class="mb-2">Interfacce accessibili e responsive con attenzione all'esperienza utente e alle performance.</p>
+                <span class="skill-level">Livello: Ottimo</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4 fade-in-up delay-200">
+              <div class="skill-card">
+                <h3 class="h6">SQL &amp; basi di dati</h3>
+                <p class="mb-2">Modeling relazionale, query ottimizzate e gestione di flussi ETL per sistemi informativi.</p>
+                <span class="skill-level">Livello: Ottimo</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4 fade-in-up delay-300">
+              <div class="skill-card">
+                <h3 class="h6">JavaScript &amp; integrazione frontend</h3>
+                <p class="mb-2">Applicazioni web dinamiche con Bootstrap, Tailwind e interazione con API REST.</p>
+                <span class="skill-level">Livello: Buono</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4 fade-in-up delay-400">
+              <div class="skill-card">
+                <h3 class="h6">Thymeleaf &amp; templating</h3>
+                <p class="mb-2">Composizione di viste server-side modulari integrate con ecosistemi Spring.</p>
+                <span class="skill-level">Livello: Buono</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4 fade-in-up delay-500">
+              <div class="skill-card">
+                <h3 class="h6">C &amp; Python</h3>
+                <p class="mb-2">Algoritmi, AI, scripting e prototipazione rapida per applicazioni desktop e accademiche.</p>
+                <span class="skill-level">Livello: Buono / Sufficiente</span>
+              </div>
+            </div>
+          </div>
+          <div class="toolset fade-in-up delay-200 mt-5">
+            <h3 class="h6 text-uppercase text-emerald-600 mb-3">Strumenti e metodologie</h3>
+            <div class="toolset-grid">
+              <span class="tool-pill">Mockito</span>
+              <span class="tool-pill">Selenium</span>
+              <span class="tool-pill">IntelliJ IDEA</span>
+              <span class="tool-pill">Eclipse</span>
+              <span class="tool-pill">Maven</span>
+              <span class="tool-pill">GitHub</span>
+              <span class="tool-pill">GIS &amp; Open Data</span>
+              <span class="tool-pill">Big Data</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="hobbies" class="py-5 bg-slate-50 dark:bg-slate-950 transition-colors duration-500">
+        <div class="container">
+          <div class="text-center mb-5 fade-in-up">
+            <span class="badge bg-emerald-100 text-emerald-700 rounded-pill px-3 py-2">Hobbies &amp; Passioni</span>
+            <h2 class="display-6 mt-3 text-slate-900 dark:text-white">Oltre lo schermo</h2>
+            <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Le esperienze che mi tengono connesso alle persone e alla natura, alimentando creatività e resilienza.</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4 fade-in-up">
+              <div class="hobby-card">
+                <img src="assets/hobby-hiking.svg" alt="Escursionismo" />
+                <div class="p-4">
+                  <h3 class="h5">Trekking e outdoor</h3>
+                  <p class="text-slate-600 dark:text-slate-300">Co-fondatore di Hiking The Amalfi Coast: organizzo escursioni e giornate culturali per far conoscere la Costiera Amalfitana a studenti italiani e stranieri.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 fade-in-up delay-150">
+              <div class="hobby-card">
+                <img src="assets/hobby-music.svg" alt="Musica" />
+                <div class="p-4">
+                  <h3 class="h5">Musica e chitarra</h3>
+                  <p class="text-slate-600 dark:text-slate-300">La chitarra mi accompagna da anni: improvviso, compongo e porto ritmo nelle attività di team building e negli eventi locali.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 fade-in-up delay-300">
+              <div class="hobby-card">
+                <img src="assets/hobby-travel.svg" alt="Viaggi" />
+                <div class="p-4">
+                  <h3 class="h5">Impegno sociale</h3>
+                  <p class="text-slate-600 dark:text-slate-300">Partecipo a eventi e iniziative multiculturali, promuovendo turismo sostenibile e progetti educativi sul territorio.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-5 bg-white dark:bg-slate-900 transition-colors duration-500">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-5 fade-in-left">
+              <h2 class="display-6 mb-3 text-slate-900 dark:text-white">Parliamo del prossimo progetto</h2>
+              <p class="text-slate-600 dark:text-slate-300">Aperto a opportunità di collaborazione, tirocinio e progetti di ricerca su software engineering, data-driven services e innovazione territoriale.</p>
+              <ul class="list-unstyled mt-4 space-y-2">
+                <li class="d-flex align-items-center gap-3 text-slate-700 dark:text-slate-200">
+                  <span class="badge rounded-pill bg-emerald-500">📍</span>
+                  Via De Ponte, 7 &ndash; 84010 Maiori (SA)
+                </li>
+                <li class="d-flex align-items-center gap-3 text-slate-700 dark:text-slate-200">
+                  <span class="badge rounded-pill bg-emerald-500">✉️</span>
+                  <a class="link-success" href="mailto:tatodimartino@gmail.com">tatodimartino@gmail.com</a>
+                </li>
+                <li class="d-flex align-items-center gap-3 text-slate-700 dark:text-slate-200">
+                  <span class="badge rounded-pill bg-emerald-500">📞</span>
+                  <a class="link-success" href="tel:+393714355173">+39 371 43 55 173</a>
+                </li>
+                <li class="d-flex align-items-center gap-3 text-slate-700 dark:text-slate-200">
+                  <span class="badge rounded-pill bg-emerald-500">🌐</span>
+                  <div class="d-flex flex-column">
+                    <a class="link-success" href="https://github.com/saldm04" target="_blank" rel="noopener">github.com/saldm04</a>
+                    <a class="link-success" href="https://www.linkedin.com/in/saldm" target="_blank" rel="noopener">linkedin.com/in/saldm</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-7 fade-in-right">
+              <form id="contactForm" class="contact-form p-4 p-md-5 shadow rounded-4 bg-slate-50 dark:bg-slate-950" action="https://formspree.io/f/xdoqoygd" method="POST">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Il tuo nome" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="nome@email.com" required />
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label">Messaggio</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Scrivimi qui..." required></textarea>
+                  </div>
+                  <div class="col-12 d-flex justify-content-between align-items-center">
+                    <button type="submit" class="btn btn-success px-4">Invia</button>
+                    <span id="formStatus" class="text-sm text-emerald-600 fw-semibold"></span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4 bg-slate-900 text-slate-200 dark:bg-slate-950 transition-colors duration-500">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          <a class="text-decoration-none text-emerald-400 fw-semibold" href="#home">Salvatore Di Martino</a>
+        </div>
+        <div class="d-flex gap-3">
+          <a class="footer-link" href="#about">About</a>
+          <a class="footer-link" href="#projects">Projects</a>
+          <a class="footer-link" href="#contact">Contact</a>
+        </div>
+        <p class="mb-0 text-sm">&copy; <span id="year"></span> Tutti i diritti riservati.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
