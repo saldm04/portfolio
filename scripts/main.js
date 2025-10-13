@@ -1,7 +1,7 @@
 const typingTexts = [
-  'Web Developer',
-  'Data Engineer',
-  'Researcher'
+  'Studente magistrale in Informatica',
+  'Software Engineering & IT Management',
+  'Web & Data Enthusiast'
 ];
 const typingElement = document.getElementById('typing');
 let typingIndex = 0;
